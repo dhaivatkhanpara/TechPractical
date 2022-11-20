@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-
 import RestaurantScreen from '../home/RestaurantScreen';
 import MapScreen from '../home/MapScreen';
 import {DashboardStackParamList} from '../../types/navigation';

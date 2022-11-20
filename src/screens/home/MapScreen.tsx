@@ -1,4 +1,3 @@
-import {useNavigation} from '@react-navigation/native';
 import React, {useEffect, useState} from 'react';
 import {Alert, StyleSheet, Text, View} from 'react-native';
 import {DashboardScreenNavigationProp} from '../../types/navigation';
@@ -12,7 +11,7 @@ import Config from '../../utils/Config';
 import {MapStyle} from '../../mock/MapStyle';
 import {Coordinates, getRegionForCoordinates, getUserLocation} from '../../utils/Helper';
 import RestaurantMapListItem from '../../listitems/RestaurantMapListItem';
-import {GOOGLE_MAPS_APIKEY} from '@env'
+import {GOOGLE_MAPS_APIKEY} from '@env';
 const MapScreen = ({route}: DashboardScreenNavigationProp<'MapScreen'>) => {
     const [origin, setOrigin] = useState<Coordinates>();
     const [destination, setDestination] = useState<Coordinates>();

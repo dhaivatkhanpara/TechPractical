@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import { RFPercentage } from 'react-native-responsive-fontsize';
-import RatingView from '../components/RatingView';
+import {RatingView} from '../components';
 import {Restaurant} from '../types/api';
 import Config from '../utils/Config';
 type RestaurantListItemProps = {
@@ -51,12 +51,12 @@ const styles = StyleSheet.create({
   image: {
     height: RFPercentage(7.5),
     width: RFPercentage(7.5),
-    borderRadius: 5
+    borderRadius: 5,
+    backgroundColor: Config.Colors.primary
   },
   mapIcon: {
     height: RFPercentage(2.5),
     width: RFPercentage(2.5),
-    backgroundColor: Config.Colors.primary
   },
   mapContainer: {
     padding: RFPercentage(1),

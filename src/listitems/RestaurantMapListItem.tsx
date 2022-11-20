@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 import { RFPercentage } from 'react-native-responsive-fontsize';
-import RatingView from '../components/RatingView';
+import {RatingView} from '../components';
 import {Restaurant} from '../types/api';
 import Config from '../utils/Config';
 

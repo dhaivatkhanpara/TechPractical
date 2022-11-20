@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {TextInput, View, Text, TextInputProps, StyleSheet} from 'react-native';
 import {RFPercentage} from '../utils/AppDimension';
 import Config from '../utils/Config';

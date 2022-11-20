@@ -1,48 +1,6 @@
 import Realm from 'realm';
 import {Restaurant} from '../types/api';
 
-// class RestaurantClass {
-//   public _id: string = '';
-//   public title: string = '';
-//   public address: string = '';
-//   public latitude: string = '';
-//   public longitude: string = '';
-//   public rating: number = 0;
-//   public total_review: number = 0;
-//   public description: string = '';
-//   public mobile: string = '';
-//   public images: Realm.List<ImageClass>;
-//   public static schema: Realm.ObjectSchema = {
-//     name: 'User',
-//     primaryKey: '_id',
-//     properties: {
-//       _id: 'uuid',
-//       title: 'string',
-//       address: 'string',
-//       latitude: 'string',
-//       longitude: 'string',
-//       rating: 'float',
-//       total_review: 'float',
-//       description: 'string',
-//       mobile: 'string',
-//       images: 'Image[]',
-//     },
-//   };
-// }
-
-// class ImageClass {
-//   public _id: string = '';
-//   public name: string = '';
-//   public static schema: Realm.ObjectSchema = {
-//     name: 'Image',
-//     primaryKey: '_id',
-//     properties: {
-//       _id: 'uuid',
-//       url: 'string',
-//     },
-//   };
-// }
-
 export const RestaurantSchema = {
   name: 'Restaurant',
   properties: {

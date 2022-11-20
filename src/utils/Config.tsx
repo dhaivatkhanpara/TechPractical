@@ -1,5 +1,4 @@
-import {normalize} from './AppDimension';
-import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
+import { RFValue } from "react-native-responsive-fontsize";
 
 const Colors = {
   primary: '#25dd93',

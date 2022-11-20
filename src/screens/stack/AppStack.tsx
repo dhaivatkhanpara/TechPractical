@@ -1,9 +1,8 @@
-import React, {useEffect, useState} from 'react';
-import {SignInScreen, MapScreen, RestaurantScreen} from '../index';
+import React from 'react';
+import {SignInScreen} from '../index';
 import {AppStackParamList} from '../../types/navigation';
 import { useAuth } from '../../context/AuthContext';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import DashboardStack from './DashboardStack';
 import BottomTabs from './BottomTabs';
 
 const AppStack = () => {

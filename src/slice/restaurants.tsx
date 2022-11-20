@@ -1,5 +1,5 @@
+import { API_URL } from '@env';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { Alert } from 'react-native';
 import { Restaurant } from '../types/api'
 
 interface RestaurantsState {
@@ -49,7 +49,7 @@ export function fetchRestaurants() {
     dispatch(getRestaurants())
 
     try {
-      const response = await fetch('http://205.134.254.135/~mobile/interview/public/api/restaurants_list')
+      const response = await fetch(API_URL)
       const data = await response.json();
       dispatch(getRestaurantsSuccess(data?.data))
     } catch (error) {

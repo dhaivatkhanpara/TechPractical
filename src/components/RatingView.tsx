@@ -5,7 +5,7 @@ import Config from '../utils/Config';
 import Octicons from 'react-native-vector-icons/Octicons';
 type RatingViewProps = {
   rating: number;
-  iconSize? :number
+  iconSize? :number;
 };
 const defaultRating = 3;
 const RatingView = ({rating = defaultRating, iconSize = 15}: RatingViewProps) => {

@@ -26,8 +26,8 @@ const SignInScreen = () => {
   const {setLoggedIn} = useAuth()!;
 
   const [validationError, setValidationError] = useState<string>();
-  const [email, setEmail] = useState<string>(USERNAME);
-  const [password, setPassword] = useState<string>(PASSWORD);
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
 
   const onLoginPress = () => {
     Keyboard.dismiss();
@@ -63,7 +63,6 @@ const SignInScreen = () => {
             value={email}
             onChangeText={text => {
               setEmail(text);
-              console.log(text);
             }}
             icon={
               <MaterialCommunityIcons

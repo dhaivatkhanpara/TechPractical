@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, TouchableOpacity} from 'react-native';
+import {StyleSheet, TouchableOpacity} from 'react-native';
 import {RFPercentage} from '../utils/AppDimension';
 import Config from '../utils/Config';
 
